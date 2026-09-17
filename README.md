@@ -14,6 +14,12 @@ Run `npm start` with Node.js 22 or newer and open http://127.0.0.1:8765. The Gem
 
 The chatbot calls Google Gemini through `/api/chat`. Questions, recent conversation, and the approved profile are sent to Google. The API key stays on the server. Requests use `store: false`; Google's service terms still apply. Gemini is instructed to acknowledge missing details, but these instructions do not guarantee factual accuracy. Reloading or resetting clears the page's conversation.
 
+## GitHub Pages
+
+The repository includes `.github/workflows/pages.yml`, which publishes the static files in `dist` whenever `main` is pushed. For the root address `https://garasicarius.github.io`, create a public GitHub repository named `GaraSicarius.github.io`, push this project to its `main` branch, and select **GitHub Actions** under **Settings → Pages → Build and deployment**.
+
+GitHub Pages hosts the portfolio interface. The Gemini key remains on the existing server endpoint and is never committed to GitHub.
+
 Get a key from https://aistudio.google.com/apikey. Copy `.env.example` to `.env` if it does not already exist and add the key after `GEMINI_API_KEY=`. Do not put secrets in `dist`, source control, or chat messages. The local server reads `.env` on each request, so saving the key does not require a restart. `GEMINI_MODEL` defaults to `gemini-3.8-flash` and can select a supported model available to the account. Verify a real answer after adding the key.
 
 For hosting, configure `GEMINI_API_KEY` as a Sites secret environment variable. Local `.env` is not uploaded. `npm run build` produces a Cloudflare-compatible Worker. This site has not been configured for public access.
