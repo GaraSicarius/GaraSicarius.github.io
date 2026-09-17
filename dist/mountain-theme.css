@@ -4,7 +4,10 @@ body{background:var(--paper);isolation:isolate}
 .mountain-backdrop{position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none}
 .mountain-scene{position:absolute;inset:-30px 0 -160px;background-image:url('images/mountain-scene.jpg');background-repeat:no-repeat;background-position:calc(50vw - max(162.5vh,56.25vw)) center;background-size:auto max(130vh,45vw);will-change:transform}
 .mountain-shade{position:absolute;inset:0;background:linear-gradient(110deg,#110d20df 0%,#20182c91 60%,#181022a3 100%)}
-header{justify-content:flex-end;gap:60px;background:#17122165;backdrop-filter:blur(12px);height:86px}
+header{width:100%;max-width:none;padding-inline:max(54px,calc((100% - 1172px)/2));justify-content:flex-end;gap:60px;background:#17122165;backdrop-filter:blur(12px);height:86px}
+@media(max-width:1250px){header{padding-inline:45px}}
+@media(max-width:850px){header{padding-inline:26px}}
+@media(max-width:620px){header{padding-inline:20px}}
 nav{margin-right:auto}nav a,.nav-contact{font-size:14px}.nav-contact{border-color:var(--purple)}
 .hero{min-height:650px;padding-top:65px}.hero-copy{text-shadow:0 2px 25px #130b20a0}.hero-art{background:#201a2ce8;box-shadow:16px 20px 0 #b48cdb25;border:1px solid #d3b5f340;backdrop-filter:blur(8px)}
 .hero-bottom{font-size:12px;padding-top:24px}.hero-bottom button{font-size:12px;color:#dfd3ee}.eyebrow,.section-label,.mini-label{font-size:12px;letter-spacing:1.5px}.location{font-size:13px;color:var(--muted)}.intro{font-size:24px}.button,.text-link{font-size:14px}.dark{background:#d3b4f1;color:#251c31;text-shadow:none}.dot{background:#dac3f6}
