@@ -1,0 +1,7 @@
+{
+  "name": "aguas-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node server.mjs", "start": "node server.mjs", "build": "node build.mjs", "test": "node --test tests/chat.test.mjs" },
+  "engines": { "node": ">=22" }
+}

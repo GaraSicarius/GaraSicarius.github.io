@@ -1,0 +1,35 @@
+/* Original supplied JPG, clipped to the artwork; no generated replacement. */
+:root{--ink:#f5f0ff;--muted:#cbc2dc;--purple:#c7a4f2;--light:#3a2c4e;--paper:#171321;--line:#d3b5f330}
+body{background:var(--paper);isolation:isolate}
+.mountain-backdrop{position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none}
+.mountain-scene{position:absolute;inset:-30px 0 -160px;background-image:url('images/mountain-scene.jpg');background-repeat:no-repeat;background-position:calc(50vw - max(162.5vh,56.25vw)) center;background-size:auto max(130vh,45vw);will-change:transform}
+.mountain-shade{position:absolute;inset:0;background:linear-gradient(110deg,#110d20df 0%,#20182c91 60%,#181022a3 100%)}
+header{justify-content:flex-end;gap:60px;background:#17122165;backdrop-filter:blur(12px);height:86px}
+nav{margin-right:auto}nav a,.nav-contact{font-size:14px}.nav-contact{border-color:var(--purple)}
+.hero{min-height:650px;padding-top:65px}.hero-copy{text-shadow:0 2px 25px #130b20a0}.hero-art{background:#201a2ce8;box-shadow:16px 20px 0 #b48cdb25;border:1px solid #d3b5f340;backdrop-filter:blur(8px)}
+.hero-bottom{font-size:12px;padding-top:24px}.hero-bottom button{font-size:12px;color:#dfd3ee}.eyebrow,.section-label,.mini-label{font-size:12px;letter-spacing:1.5px}.location{font-size:13px;color:var(--muted)}.intro{font-size:24px}.button,.text-link{font-size:14px}.dark{background:#d3b4f1;color:#251c31;text-shadow:none}.dot{background:#dac3f6}
+.about,.seminar-section{background:#171220dc;padding:64px 38px;border:1px solid var(--line);border-radius:18px;margin-top:50px;margin-bottom:50px;backdrop-filter:blur(12px)}
+.section-grid p{font-size:16px}.section-grid .about-lead{font-size:22px}.skill h3{font-size:15px}.tag{background:#d3b5f317;color:#e3d2f3;font-size:13px}.education{background:#a98bb10d}.education p,.muted{font-size:14px}.education h3{font-size:20px}
+.work,.certificates{background:linear-gradient(90deg,#21192ae6,#302239d4);border-block:1px solid var(--line);backdrop-filter:blur(8px)}.project-media{background:#b18bdb1c;border-color:#cfa9f14a;color:#d8baf2!important}.project:nth-child(2) .project-media{background:#17121db5;border-color:#cfa9f14a}.project-meta{font-size:12px;letter-spacing:1px}.project ul{font-size:15px;color:var(--muted)}.section-heading>p{font-size:14px}.placeholder-title{font-size:14px}
+.certificate{background:#21192de0;border-color:var(--line);padding:20px}.certificate-progress{height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:linear-gradient(140deg,#a281c82e,#a281c807);border-radius:8px;border:1px solid #d4b3ee24}.course-mark{font-family:Manrope,Arial,sans-serif;font-size:48px;line-height:1;color:#d8bff1}.course-status{font-size:13px;color:#e2cef5;padding:4px 12px;border-radius:30px;background:#c999e91c}.certificate h3{font-size:18px;line-height:1.4;margin-top:20px}.certificate p{font-size:14px}.seminars p{font-size:15px}.seminars time{font-size:13px}.seminars p span{font-size:12px}
+footer.social-footer{display:block;text-align:center;border:0;padding:80px 0 100px!important}.social-footer h2{font-size:36px;line-height:1.4;letter-spacing:-1px;color:var(--ink)}.social-footer h2 span{color:var(--purple)}.social-footer>p{font-size:13px;margin:34px 0 0}.social-links{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}.social-link{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:15px 18px;border:1px solid #d5b4f050;background:#231b30d9;border-radius:12px;font-size:14px;min-width:130px;transition:background .2s,transform .2s}.social-link svg{width:23px;height:23px;flex-shrink:0}.social-link:hover:not(.missing){background:#49315e;transform:translateY(-3px)}.social-link.missing{color:#b5a7c4;border-style:dashed}.social-link small{flex-basis:100%;font-size:12px;color:#b5a7c4}
+.chat-widget{left:16px;right:auto;bottom:max(16px,env(safe-area-inset-bottom))}.chat-widget .chat{left:0;right:auto;background:#231c2e;border-color:#b18cdb70}.chat-launcher{background:#2e223e;border-color:#c4a0e4;color:#f3e9fc}.chat-head{border-color:var(--line)}.chat-head strong{font-size:14px}.chat-head span{font-size:12px}.bot-icon{background:#d3b5f31f;color:#d0abea}.message{background:#b48bd026}.message.user{background:#724c93}.suggestions button{background:#392947;border-color:#d5b4f040;color:#e6d7f3;font-size:12px}.chat-widget form{background:#17111f;border-color:#a786bb66}.chat-widget input{color:#f6effc}.chat-widget input::placeholder{color:#b8a8c8}.chat-disclosure{font-size:11px;color:#c0afd0}.trail-word{color:#d1a3fa}
+@media(max-width:850px){header{gap:25px}.about,.seminar-section{padding:48px 25px}.hero{min-height:auto;padding-top:50px}.code-block{font-size:10px}.hero-art{min-width:0}.social-footer h2{font-size:30px}}
+@media(max-width:620px){header{height:72px;justify-content:center}nav{margin:0;gap:25px}.hero{padding-top:40px}.about,.seminar-section{padding:38px 20px}.section-grid .about-lead{font-size:20px}.skills{grid-template-columns:1fr}.hero-bottom{gap:15px;flex-wrap:wrap}.hero-art{box-shadow:8px 12px 0 #b48cdb25}.social-footer h2{font-size:27px}.social-link{min-width:120px;padding:13px}.chat-widget{left:12px;bottom:max(12px,env(safe-area-inset-bottom))}.chat-widget .chat{width:min(370px,calc(100vw - 24px))}.mountain-shade{background:linear-gradient(110deg,#110d20d9,#20182caa)}.mountain-scene{background-position:10% center}}
+@media(prefers-reduced-motion:reduce){.mountain-scene{transform:none!important;will-change:auto}.social-link{transition:none}}
+@media print{.mountain-backdrop{display:none}body{background:white;color:black}.about,.seminar-section,.work,.certificates,.certificate{background:white;color:black;backdrop-filter:none}.social-footer{display:none}}
+
+/* Project screenshots and the requested right-side chat placement. */
+.chat-widget{left:auto;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}
+.chat-widget .chat{left:auto;right:0}
+.project-gallery .project-media{padding:0;background:#141019;border:1px solid #cfa9f14a;aspect-ratio:16/10;height:auto}
+.project-gallery .project-media img{display:block;object-fit:contain;width:100%;height:100%}
+.gallery-caption{font-size:13px;color:var(--muted);margin:10px 0;min-height:22px}
+.gallery-thumbs{display:flex;gap:10px}
+.gallery-thumb{width:85px;height:58px;background:#17111f;padding:3px;border:2px solid transparent;border-radius:6px;overflow:hidden}
+.gallery-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.gallery-thumb[aria-pressed="true"]{border-color:var(--purple);background:#ac80ce30}
+.gallery-thumb:hover{border-color:#cfa9f180}
+#image-dialog{background:#231c2e;color:var(--ink);border:1px solid var(--line)}
+#image-dialog img{display:block;clear:both}
+@media(max-width:620px){.chat-widget{left:auto;right:max(12px,env(safe-area-inset-right))}.chat-widget .chat{left:auto;right:0}.gallery-thumb{width:78px;height:55px}}
